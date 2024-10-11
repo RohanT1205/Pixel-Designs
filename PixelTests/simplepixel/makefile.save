@@ -1,0 +1,9 @@
+
+#makefile
+lab01: lab01.o
+	gcc -g -o lab01 lab01.o
+lab01.o: lab01.c
+.PHONY: clean
+clean:
+	rm -f *.o
+	touch *
